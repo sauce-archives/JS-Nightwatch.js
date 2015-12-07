@@ -1,0 +1,84 @@
+{
+  "src_folders" : ["tests"],
+  "output_folder" : "reports",
+  "custom_commands_path" : "custom_commands",
+  "custom_assertions_path" : "",
+  "page_objects_path" : "",
+  "globals_path" : "",
+
+  "selenium" : {
+    "start_process" : false,
+    "server_path" : "",
+    "log_path" : "",
+    "host" : "127.0.0.1",
+    "port" : 4444,
+    "cli_args" : {
+      "webdriver.chrome.driver" : "",
+      "webdriver.ie.driver" : ""
+    }
+  },
+
+  "test_workers" : {"enabled" : true, "workers" : "auto"},
+
+  "test_settings" : {
+    "default" : {
+      "launch_url" : "http://localhost",
+      "selenium_port"  : 80,
+      "selenium_host"  : "ondemand.saucelabs.com",
+      "silent": true,
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+      },
+      "username" : "${SAUCE_USERNAME}",
+      "access_key" : "${SAUCE_ACCESS_KEY}",
+
+      "desiredCapabilities": {
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    },
+
+    "chrome": {
+      "desiredCapabilities": {
+        "platform": "XP",
+        "browserName": "chrome",
+        "version": "41"
+      }
+    },
+
+    "firefox" : {
+      "desiredCapabilities": {
+        "platform": "XP",
+        "browserName": "firefox",
+        "version": "33"
+      }
+    },
+
+    "internet_explorer_10" : {
+      "desiredCapabilities": {
+        "platform": "Windows 7",
+        "browserName": "internet explorer",
+        "version": "10"
+      }
+    },
+
+    "android_s4_emulator": {
+      "desiredCapabilities": {
+        "browserName": "android",
+        "deviceOrientation": "portrait",
+        "deviceName": "Samsung Galaxy S4 Emulator"
+      }
+    },
+
+    "iphone_6_simulator": {
+      "desiredCapabilities": {
+        "browserName": "iPhone",
+        "deviceOrientation": "portrait",
+        "deviceName": "iPhone 6",
+        "platform": "OSX 10.10",
+        "version": "8.4"
+      }
+    }
+  }
+}

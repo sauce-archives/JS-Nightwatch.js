@@ -1,0 +1,10 @@
+{
+  "name": "JS-Nightwatch.js",
+  "version": "0.0.0",
+  "description": "Parallel tests nigtwatch  =============",
+  "main": "",
+  "devDependencies": {
+    "saucelabs": "1.0.1",
+    "nightwatch": "0.8.6"
+  }
+}
