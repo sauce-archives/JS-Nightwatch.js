@@ -10,11 +10,10 @@ exports.command = function(result) {
     var jobName = this.currentTest.name;
 
     saucelabs.updateJob(sessionid, {
-        passed: result === 0,
+        passed: this.currentTest.results.failed === 0,
         name: jobName
     }, function() {});
 
     console.log("SauceOnDemandSessionID=" + sessionid + " job-name=" + jobName);
-
     this.end();
 };
