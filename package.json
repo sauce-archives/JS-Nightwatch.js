@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Parallel tests nigtwatch  =============",
   "main": "",
+  "scripts": {
+    "test": "nightwatch"
+  },
   "devDependencies": {
     "saucelabs": "1.0.1",
     "nightwatch": "0.8.6"
