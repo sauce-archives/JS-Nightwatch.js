@@ -12,13 +12,6 @@ module.exports = {
             .assert.title('I am a page title - Sauce Labs');
     },
 
-    'Failure Guinea Pig Assert Title': function(client) {
-        client
-            .url('https://saucelabs.com/test/guinea-pig')
-            .waitForElementVisible('body', 1000)
-            .assert.title('Banana');
-    },
-
     afterEach: function(client, done) {
         client.customSauceEnd();
 
