@@ -41,7 +41,7 @@
 
     "chrome": {
       "desiredCapabilities": {
-        "platform": "XP",
+        "platform": "Windows XP",
         "browserName": "chrome",
         "version": "41"
       }
@@ -49,7 +49,7 @@
 
     "firefox" : {
       "desiredCapabilities": {
-        "platform": "XP",
+        "platform": "Windows XP",
         "browserName": "firefox",
         "version": "33"
       }
