@@ -1,7 +1,7 @@
 {
   "name": "JS-Nightwatch.js",
   "version": "0.0.0",
-  "description": "Parallel tests nigtwatch  =============",
+  "description": "Parallel tests nigtwatch",
   "main": "",
   "scripts": {
     "test": "nightwatch --test tests/guineaPig.js"
