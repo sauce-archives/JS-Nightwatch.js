@@ -7,7 +7,7 @@ module.exports = {
 
     'Guinea Pig Assert Title': function(client) {
         client
-            .url('https://saucelabs.com/test/guinea-pig')
+            .url('https://saucelabs-sample-test-frameworks.github.io/training-test-page')
             .waitForElementVisible('body', 1000)
             .assert.title('I am a page title - Sauce Labs');
     },
