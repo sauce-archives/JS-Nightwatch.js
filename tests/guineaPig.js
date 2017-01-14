@@ -1,6 +1,3 @@
-var https = require('https');
-var SauceLabs = require("saucelabs");
-
 module.exports = {
 
     '@tags': ['guineaPig'],
