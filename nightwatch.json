@@ -23,9 +23,8 @@
   "test_settings" : {
     "default" : {
       "launch_url" : "http://localhost",
-      "selenium_port"  : 443,
+      "selenium_port"  : 80,
       "selenium_host"  : "ondemand.saucelabs.com",
-      "use_ssl": true,
       "silent": true,
       "screenshots" : {
         "enabled" : false,

@@ -1,4 +1,4 @@
-exports.command = function(cb) {
+exports.command = function(result) {
     var SauceLabs = require("saucelabs");
 
     var saucelabs = new SauceLabs({
@@ -12,7 +12,8 @@ exports.command = function(cb) {
     saucelabs.updateJob(sessionid, {
         passed: this.currentTest.results.failed === 0,
         name: jobName
-    }, cb);
+    }, function() {});
 
     console.log("SauceOnDemandSessionID=" + sessionid + " job-name=" + jobName);
+    this.end();
 };
