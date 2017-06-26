@@ -10,11 +10,11 @@ exports.command = function(callback) {
         jobName = this.currentTest.name,
         passed = this.currentTest.results.testcases[jobName].failed === 0;
 
+
+    console.log("SauceOnDemandSessionID=" + sessionid + " job-name=" + jobName);
+
     saucelabs.updateJob(sessionid, {
         passed: passed,
         name: jobName
-    }, function() {});
-
-    console.log("SauceOnDemandSessionID=" + sessionid + " job-name=" + jobName);
-    this.end();
+    }, this.end(callback));
 };
