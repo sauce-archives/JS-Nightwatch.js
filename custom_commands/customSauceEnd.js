@@ -1,4 +1,4 @@
-exports.command = function(result) {
+exports.command = function(callback) {
     var SauceLabs = require("saucelabs");
 
     var saucelabs = new SauceLabs({
@@ -6,14 +6,15 @@ exports.command = function(result) {
         password: process.env.SAUCE_ACCESS_KEY
     });
 
-    var sessionid = this.capabilities['webdriver.remote.sessionid'];
-    var jobName = this.currentTest.name;
+    var sessionid = this.capabilities['webdriver.remote.sessionid'],
+        jobName = this.currentTest.name,
+        passed = this.currentTest.results.testcases[jobName].failed === 0;
 
-    saucelabs.updateJob(sessionid, {
-        passed: this.currentTest.results.failed === 0,
-        name: jobName
-    }, function() {});
 
     console.log("SauceOnDemandSessionID=" + sessionid + " job-name=" + jobName);
-    this.end();
+
+    saucelabs.updateJob(sessionid, {
+        passed: passed,
+        name: jobName
+    }, this.end(callback));
 };
