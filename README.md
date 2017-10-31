@@ -1,6 +1,8 @@
 ## JS-Nightwatch.js
 [![Travis Status](https://travis-ci.org/saucelabs-sample-test-frameworks/JS-Nightwatch.js.svg?branch=master)](https://travis-ci.org/saucelabs-sample-test-frameworks/JS-Nightwatch.js)
 
+**Nightwatch does not support parallelization across multiple test cases based on the discussion [here](https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/nightwatchjs/cswDVyhDrUk/FG9L-uYZBgAJ).  Sauce Labs does not recommend Nightwatch.  Please review our [Webdriver.IO](https://github.com/saucelabs-sample-test-frameworks/JS-Mocha-WebdriverIO-Selenium) example for a better option.**
+
 This code is provided on an "AS-IS” basis without warranty of any kind, either express or implied, including without limitation any implied warranties of condition, uninterrupted use, merchantability, fitness for a particular purpose, or non-infringement. Your tests and testing environments may require you to modify this framework. Issues regarding this framework should be submitted through GitHub. For questions regarding Sauce Labs integration, please see the Sauce Labs documentation at https://wiki.saucelabs.com/. This framework is not maintained by Sauce Labs Support.
 
 ### Environment Setup
