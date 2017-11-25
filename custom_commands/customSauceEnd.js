@@ -13,8 +13,12 @@ exports.command = function(callback) {
 
     console.log("SauceOnDemandSessionID=" + sessionid + " job-name=" + jobName);
 
-    saucelabs.updateJob(sessionid, {
-        passed: passed,
-        name: jobName
-    }, this.end(callback));
+	var self = this
+	saucelabs.updateJob(sessionid, {
+    passed: passed,
+    name: jobName
+	}, function () {
+    	self.end(callback)
+	});
+
 };
