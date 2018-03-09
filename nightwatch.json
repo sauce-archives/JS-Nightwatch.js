@@ -5,7 +5,13 @@
   "custom_assertions_path" : "",
   "page_objects_path" : "",
   "globals_path" : "",
-
+  "live_output" : false,
+  "disable_colors": false,
+  "parallel_process_delay" : 500,
+  "test_workers": {
+    "enabled": true,
+    "workers": 30
+  },
   "selenium" : {
     "start_process" : false,
     "server_path" : "",
@@ -18,12 +24,10 @@
     }
   },
 
-  "test_workers" : {"enabled" : true, "workers" : "auto"},
-
   "test_settings" : {
     "default" : {
       "launch_url" : "http://localhost",
-      "selenium_port"  : 80,
+      "selenium_port"  : 4444,
       "selenium_host"  : "ondemand.saucelabs.com",
       "silent": true,
       "screenshots" : {
@@ -38,6 +42,10 @@
       "desiredCapabilities": {
         "javascriptEnabled": true,
         "acceptSslCerts": true
+      },
+      "globals" : {
+        "environment": "default",
+        "parallelURL": "https://saucelabs-sample-test-frameworks.github.io/training-test-page"
       }
     },
 

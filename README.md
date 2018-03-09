@@ -27,10 +27,29 @@ This code is provided on an "AS-IS” basis without warranty of any kind, either
 
 ### Running Tests
 
-* Tests in Parallel:
-	```
-	$ ./node_modules/.bin/nightwatch -e chrome,firefox,internet_explorer_edge,android_s4_emulator,iphone_6_simulator tests
-	```
+
+
+#### Tests in Parallel:
+
+To run tests in parallel (single environment profile) you need to configure `test_workers` and `parallel_process_delay` within nightwatch.json file. 
+
+The `test_workers` enables the test runner to launch a configurable number of child processes and distribute the load of tests to be executed in parallel. It's important to understand how to configure how many child processes can run in parallel. 
+
+* "auto" - determined by number of CPUs e.g. 4 CPUs means 4 workers
+* {number} - specifies an exact number of workers   
+
+If you configure workers to {number}, I recommend enabling `parallel_process_delay' parameter to delay (in milliseconds) between starting the child processes when running tests in parallel mode. You will need to explore what is the best delay for your machine to slowly ramp up the concurrency. 
+
+```
+  "parallel_process_delay" : 500,
+  "test_workers": {
+    "enabled": true,
+    "workers": 30
+  },
+```
+`$ nightwatch -e chrome`
+
+To execute multiple environment profiles in parallel, recommend configuring your CI pipeline to run each environment profile on it's own CI worker in parallel; CI Worker - chrome, CI Worker -firefox, and CI Worker - internet_explorer_edge
 
 [Sauce Labs Dashboard](https://saucelabs.com/beta/dashboard/)
 

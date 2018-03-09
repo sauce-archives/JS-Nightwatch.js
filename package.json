@@ -1,13 +1,14 @@
 {
   "name": "JS-Nightwatch.js",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Parallel tests nigtwatch",
   "main": "",
   "scripts": {
-    "test": "./node_modules/.bin/nightwatch -e chrome,firefox,internet_explorer_10 tests"
+    "test": "nightwatch -e chrome,firefox,internet_explorer_edge"
   },
-  "devDependencies": {
-    "saucelabs": "1.4.0",
-    "nightwatch": "0.9.16"
+  "dependencies": {
+    "nightwatch": "0.9.19",
+    "saucelabs": "^1.4.0",
+    "selenium-webdriver": "^3.6.0"
   }
 }
