@@ -5,7 +5,6 @@
   "custom_assertions_path" : "",
   "page_objects_path" : "",
   "globals_path" : "",
-  "live_output" : false,
   "disable_colors": false,
   "parallel_process_delay" : 500,
   "test_workers": {
@@ -27,7 +26,6 @@
   "test_settings" : {
     "default" : {
       "launch_url" : "http://localhost",
-      "selenium_port"  : 4444,
       "selenium_host"  : "ondemand.saucelabs.com",
       "silent": true,
       "screenshots" : {

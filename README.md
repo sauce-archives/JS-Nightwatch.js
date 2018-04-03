@@ -47,6 +47,7 @@ If you configure workers to {number}, I recommend enabling `parallel_process_del
     "workers": 30
   },
 ```
+Execute all tests in parallel for a specific environment profile 
 `$ nightwatch -e chrome`
 
 To execute multiple environment profiles in parallel, recommend configuring your CI pipeline to run each environment profile on it's own CI worker in parallel; CI Worker - chrome, CI Worker -firefox, and CI Worker - internet_explorer_edge
