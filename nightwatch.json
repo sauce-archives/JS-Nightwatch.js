@@ -43,7 +43,7 @@
 
     "chrome": {
       "desiredCapabilities": {
-        "platform": "Windows 7",
+        "platform": "Windows 10",
         "browserName": "chrome",
         "version": "latest"
       }
@@ -51,9 +51,9 @@
 
     "firefox" : {
       "desiredCapabilities": {
-        "platform": "Windows 8",
+        "platform": "Windows 10",
         "browserName": "firefox",
-        "version": "33"
+        "version": "59.0"
       }
     },
 
