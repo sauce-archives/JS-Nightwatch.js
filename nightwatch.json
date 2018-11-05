@@ -18,6 +18,11 @@
     }
   },
 
+  "request_timeout_options": {
+    "timeout": 10,
+    "retry_attempts": 0
+  },
+
   "test_workers" : {"enabled" : true, "workers" : "auto"},
 
   "test_settings" : {
@@ -32,8 +37,6 @@
       },
       "username" : "${SAUCE_USERNAME}",
       "access_key" : "${SAUCE_ACCESS_KEY}",
-
-      "skip_testcases_on_fail": false,
 
       "desiredCapabilities": {
         "javascriptEnabled": true,
