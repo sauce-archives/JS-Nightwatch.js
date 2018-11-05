@@ -3,16 +3,14 @@ var SauceLabs = require("saucelabs");
 
 module.exports = {
 
-    '@tags': ['guineaPig'],
-
-    'Fail 2': function(client) {
+    'Bad Situation': function(client) {
         client
             .url('https://saucelabs-sample-test-frameworks.github.io/training-test-page')
             .waitForElementVisible('body', 1000)
             .assert.title('Banana');
     },
 
-    'Not Fail 1': function(client) {
+    'Also Not Great': function(client) {
         client
             .url('https://saucelabs-sample-test-frameworks.github.io/training-test-page')
             .waitForElementVisible('body', 1000)
