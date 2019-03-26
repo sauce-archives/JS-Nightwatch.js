@@ -4,7 +4,8 @@
   "description": "Parallel tests nigtwatch",
   "main": "",
   "scripts": {
-    "test": "./node_modules/.bin/nightwatch -e chrome_mac,chrome_win,firefox_mac,firefox_win tests"
+    "test": "./node_modules/.bin/nightwatch -e chrome_mac,chrome_win,firefox_mac,firefox_win tests",
+    "test-regression": "./node_modules/.bin/nightwatch -e chrome_mac,chrome_win,firefox_mac,firefox_win -g tests/regression/"
   },
   "devDependencies": {
     "saucelabs": "1.4.0",
