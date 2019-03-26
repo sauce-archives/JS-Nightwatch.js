@@ -41,45 +41,35 @@
       }
     },
 
-    "chrome": {
+    "chrome_mac": {
       "desiredCapabilities": {
-        "platform": "Windows 7",
+        "platform": "macos 10.13",
         "browserName": "chrome",
         "version": "latest"
       }
     },
 
-    "firefox" : {
-      "desiredCapabilities": {
-        "platform": "Windows 8",
-        "browserName": "firefox",
-        "version": "33"
-      }
-    },
-
-    "internet_explorer_edge" : {
+    "chrome_win": {
       "desiredCapabilities": {
         "platform": "Windows 10",
-        "browserName": "MicrosoftEdge",
+        "browserName": "chrome",
         "version": "latest"
       }
     },
 
-    "android_s4_emulator": {
+    "firefox_win" : {
       "desiredCapabilities": {
-        "browserName": "android",
-        "deviceOrientation": "portrait",
-        "deviceName": "Samsung Galaxy S4 Emulator"
+        "platform": "Windows 10",
+        "browserName": "firefox",
+        "version": "latest"
       }
     },
 
-    "iphone_6_simulator": {
+    "firefox_mac" : {
       "desiredCapabilities": {
-        "browserName": "iPhone",
-        "deviceOrientation": "portrait",
-        "deviceName": "iPhone 6",
-        "platform": "OSX 10.10",
-        "version": "8.4"
+        "platform": "macos 10.13",
+        "browserName": "firefox",
+        "version": "latest"
       }
     }
 
