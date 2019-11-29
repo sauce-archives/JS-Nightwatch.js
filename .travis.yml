@@ -1,7 +1,7 @@
 language: node_js
 node_js:
 - node
-- 'LTS'
+- lts/*
 before_install:
 - export | grep SAUCE_
 env:
