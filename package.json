@@ -4,7 +4,7 @@
   "description": "Parallel tests nigtwatch",
   "main": "",
   "scripts": {
-    "test": "./node_modules/.bin/nightwatch -e chrome,firefox,internet_explorer_10 tests"
+    "test": "./node_modules/.bin/nightwatch -e chrome tests"
   },
   "devDependencies": {
     "saucelabs": "3.0.1",
