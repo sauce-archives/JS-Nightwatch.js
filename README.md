@@ -1,3 +1,6 @@
+>**NOTE:<br/>**
+> This project is not maintained anymore by Sauce Labs
+
 ## JS-Nightwatch.js
 [![Travis Status](https://travis-ci.org/saucelabs-sample-test-frameworks/JS-Nightwatch.js.svg?branch=master)](https://travis-ci.org/saucelabs-sample-test-frameworks/JS-Nightwatch.js)
 
