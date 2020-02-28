@@ -6,25 +6,14 @@
   "page_objects_path" : "",
   "globals_path" : "",
 
-  "selenium" : {
-    "start_process" : false,
-    "server_path" : "",
-    "log_path" : "",
-    "host" : "127.0.0.1",
-    "port" : 4444,
-    "cli_args" : {
-      "webdriver.chrome.driver" : "",
-      "webdriver.ie.driver" : ""
-    }
-  },
-
   "test_workers" : {"enabled" : true, "workers" : "auto"},
 
   "test_settings" : {
     "default" : {
       "launch_url" : "http://localhost",
-      "selenium_port"  : 80,
+      "selenium_port"  : 443,
       "selenium_host"  : "ondemand.saucelabs.com",
+      "use_ssl": true,
       "silent": true,
       "screenshots" : {
         "enabled" : false,
@@ -49,9 +38,25 @@
       }
     },
 
+    "chromemac": {
+      "desiredCapabilities": {
+        "platform": "macOS 10.13",
+        "browserName": "chrome",
+        "version": "latest"
+      }
+    },
+
+    "safari": {
+      "desiredCapabilities": {
+        "platform": "macOS 10.13",
+        "browserName": "Safari",
+        "version": "latest"
+      }
+    },
+
     "firefox" : {
       "desiredCapabilities": {
-        "platform": "Windows 8",
+        "platform": "Windows 10",
         "browserName": "firefox",
         "version": "33"
       }
@@ -73,13 +78,13 @@
       }
     },
 
-    "iphone_6_simulator": {
+    "iphone_x_simulator": {
       "desiredCapabilities": {
-        "browserName": "iPhone",
+        "browserName": "Safari",
         "deviceOrientation": "portrait",
-        "deviceName": "iPhone 6",
-        "platform": "OSX 10.10",
-        "version": "8.4"
+        "deviceName": "iPhone X Simulator",
+        "platformVersion": "13.0",
+        "platformName": "iOS"
       }
     }
 
